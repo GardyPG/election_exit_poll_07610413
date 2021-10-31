@@ -16,12 +16,6 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
 
   @override
-  initState() {
-    super.initState();
-    _candidatelist = _loadCandidate();
-  }
-
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
@@ -88,7 +82,7 @@ class _HomePageState extends State<HomePage> {
   Widget _showCandidate() {
     return Container(
       child: FutureBuilder<List<Candidate>>(
-        future: _candidatelist,
+
         builder: (context, snapshot) {
           if (snapshot.connectionState != ConnectionState.done) {
             return Center(
@@ -132,7 +126,7 @@ class _HomePageState extends State<HomePage> {
                           Padding(
                             padding: const EdgeInsets.all(10.0),
                             child: Text(
-                                '${candidate.title}${candidate.fullName}'),
+                                '${candidate.title}${candidate.name}'),
                           ),
                         ],
                       ),
