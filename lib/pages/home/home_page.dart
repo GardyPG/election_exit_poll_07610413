@@ -1,3 +1,5 @@
+import 'package:election_exit_poll_07610413/model/candidate.dart';
+import 'package:election_exit_poll_07610413/services/api.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';

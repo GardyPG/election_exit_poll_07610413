@@ -1,6 +1,5 @@
-
-
 import 'package:election_exit_poll_07610413/model/result.dart';
+import 'package:election_exit_poll_07610413/services/api.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -108,7 +107,7 @@ class _ResultPageState extends State<ResultPage> {
                                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                         children: [
                                           Text(
-                                              '${result.title}${result.fullName}'),
+                                              '${result.title}${result.name}'),
                                           Text(
                                             '${result.score}',style: TextStyle(fontWeight: FontWeight.bold),),
                                         ],
